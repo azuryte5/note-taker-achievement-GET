@@ -36,4 +36,6 @@ Getting grading on
 - deployed to heroku
 - deployed to live url, with no errors
 
+production environment Heroku, github Where the live application lives
+
 
