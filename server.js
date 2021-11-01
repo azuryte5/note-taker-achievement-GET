@@ -6,9 +6,12 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3001;
 const notes = require('./db/db.json');
+const { nanoid } = require('nanoid');
+
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json())
-const { nanoid } = require('nanoid')
+
 // function createNewNote(body, noteArray) {
 //   const note= body;
 //   noteArray.push(note);
@@ -17,6 +20,12 @@ const { nanoid } = require('nanoid')
 //   );
 //   return note;  
 // }
+
+app.get('/api/notes', (req, res) => {
+  let currentNotes = JSON.parse(fs.readFileSync('./db/db.json', 'utf-8'));
+  console.log("My Notes ..." + JSON.stringify(currentNotes));
+  res.json(currentNotes);
+  });
 
 function makeNewNote (body, notesArray){
 const note = body
@@ -38,11 +47,9 @@ app.get('/notes', (req, res) => {
   res.sendFile(path.join(__dirname, 'public/notes.html'))
   
 });
-
-app.get('/api/notes', (req, res) => {
-res.json(notes);
-});
-
+app.post('/api/notes', (req, res) => {
+  res.json(notes)
+  })
 
 
 app.get('/', (req,res) =>{
@@ -50,17 +57,11 @@ app.get('/', (req,res) =>{
 });
 
 
-app.get('/api/notes', (req, res) => {
-  const chosen = req.body;
-
-  console.log(res.json(chosen));
-});
-
 app.get('*', (req,res) =>{
   res.sendFile(path.join(__dirname, 'public/index.html'));
 });
 
 app.listen(PORT, () => {
   console.log(`API server now on port ${PORT}!`);
-  console.log(notes)
+  // console.log(notes)
 });
