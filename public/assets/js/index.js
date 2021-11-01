@@ -24,14 +24,14 @@ const hide = (elem) => {
 
 // activeNote is used to keep track of the note in the textarea
 let activeNote = {};
-
+// Point of entry
 const getNotes = () =>
   fetch('/api/notes', {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
     },
-  });
+    });
 
 const saveNote = (note) =>
   fetch('/api/notes', {
@@ -86,7 +86,7 @@ const handleNoteDelete = (e) => {
   const noteId = JSON.parse(note.parentElement.getAttribute('data-note')).id;
 
   if (activeNote.id === noteId) {
-    activeNote = {};
+    activeNote = {}; 
   }
 
   deleteNote(noteId).then(() => {
