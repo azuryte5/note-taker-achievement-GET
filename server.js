@@ -15,39 +15,44 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json())
 
 app.delete("/api/notes/:id", (req, res) =>{
-  const result = notes.filter(function(notes) {
-   if (notes.id === req.params.id) {
+  const trashBinArray = JSON.parse(fs.readFileSync('./db/db.json', 'utf-8'))
+
+  const result = trashBinArray.filter(function(notes) {
+   if (notes.id !== req.params.id) {
      return true;
    }})
   res.json(result);
+  console.log(trashBinArray)
   console.log(result);
- 
-  console.log(notes)
   fs.writeFileSync(
     path.join(__dirname, './db/db.json'),
-    JSON.stringify(notes, null, 2)
+    JSON.stringify(result, null, 2)
     )
 });
 
 app.get('/api/notes', (req, res) => {
   let currentNotes = JSON.parse(fs.readFileSync('./db/db.json', 'utf-8'));
-  console.log("My Notes ..." + JSON.stringify(currentNotes));
+  // console.log("My Notes ..." + JSON.stringify(currentNotes));
+  console.log(currentNotes)
   res.json(currentNotes);
   });
 
-function makeNewNote (body, notesArray){
+function makeNewNote (body, notesList){
 const note = body;
 note.id = nanoid();
-notesArray.push(note);
+notesList.push(note);
 fs.writeFileSync(
   path.join(__dirname, './db/db.json'),
-  JSON.stringify(notesArray, null, 2)
+  JSON.stringify(notesList, null, 2)
   );
   return note;
 }
 
 app.post('/api/notes' , (req, res) => {
   const note = makeNewNote(req.body, notes);
+
+  notes
+  console.log(note)
   res.json(note);
 });
 
@@ -55,9 +60,6 @@ app.get('/notes', (req, res) => {
   res.sendFile(path.join(__dirname, 'public/notes.html'))
   
 });
-app.post('/api/notes', (req, res) => {
-  res.json(notes)
-  })
 
 // function findById(id, notesArray) {
 //   const result = notesArray.filter(notesArray.id === id)[0];

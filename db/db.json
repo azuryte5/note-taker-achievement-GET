@@ -1,15 +1,5 @@
 [
   {
-    "title": "Get lunch",
-    "text": "Don't forget to eat lunch",
-    "id": "mZ7-AdbEgwVqAYRSwLBnk"
-  },
-  {
-    "title": "study for CPACC",
-    "text": "study for 5 hours a week",
-    "id": "FLeAQfRwc1PYUTWtDr1h5"
-  },
-  {
     "title": "Shawdowlands",
     "text": "Race to the picnic & collet tasty cupcakes!",
     "id": "wNuqW-jxHBBFt1BEarOzD"
@@ -20,13 +10,28 @@
     "id": "HVyZB48Lz3Wfkr5pJlQTo"
   },
   {
-    "title": "Monopoly Gamer",
-    "text": "Choose your Power",
-    "id": "ULOWXTlUOcea7775df5mK"
+    "title": "Lordof the rings board game",
+    "text": "Ages 8+",
+    "id": "n1jjxt0GRe-tQ6FaBuaxc"
   },
   {
-    "title": "Blokus",
-    "text": "Stake your Claim Protect your Territory!",
-    "id": "iugqaxE3AaheHngU1AJef"
+    "title": "Freshwater Fly",
+    "text": "Fly fishing fun",
+    "id": "1fLqYYsv7_j51oMeH1xQt"
+  },
+  {
+    "title": "Sudoku",
+    "text": "Time to put numbers in",
+    "id": "Os7wgup4XNINeAIeAK0Ma"
+  },
+  {
+    "title": "Risk Junior",
+    "text": "Come sail the seas of emerald green",
+    "id": "39iumj0BGtVqbBhkUigky"
+  },
+  {
+    "title": "Dead of Winter",
+    "text": "Winter is coming, better stock up",
+    "id": "5_tuVuWBYg1a_Nwsa2DP5"
   }
 ]
