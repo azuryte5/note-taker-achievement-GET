@@ -11,16 +11,16 @@ Week 11 Challenge  - Express.js: Note Taker
 1. [Credits](#credits)
 ----
 ## Links
-The URL of the GitHub repository: 
+The URL of the GitHub repository: https://github.com/azuryte5/note-taker-achievement-GET
 
-The link to the deployed heroku application:
+The link to the deployed heroku application: https://note-taker-achievement-get.herokuapp.com/
 
 -----
 ## Usage
 Notes can be added, deleted and returned on reload being stored on deployed heroku application
+![note taker application](https://user-images.githubusercontent.com/85147307/139871138-f81f589d-9e4c-40a6-b445-8780952cbe6b.png)
+![code for note taker challenge](https://user-images.githubusercontent.com/85147307/139871126-1716a1ab-cfee-470e-a692-bfb4928cf097.png)
 
-<img alt="note taker application" src="assets/img/notes-screenshot.png">
-<img alt="code made for note taker challenge" src="assets/img/code-screenshot.png">
 -----
 ## Tech Used 
 
