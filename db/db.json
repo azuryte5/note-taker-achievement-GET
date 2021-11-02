@@ -1,27 +1,32 @@
 [
   {
-    "title": "Chess",
-    "text": "Best game ever",
-    "id": "y4kBeejxtN3biaWHmbMWO"
+    "title": "Book Team Meeting",
+    "text": "Meetings every Tuesday Morning",
+    "id": "85H_h1jLK8sD7Ot9_9BAB"
   },
   {
-    "title": "Gladius",
-    "text": "Best game in the world",
-    "id": "w9owlUTExr5m_pqmXkO_A"
+    "title": "Coffee Networking",
+    "text": "Meet potential clients for coffee, social",
+    "id": "ZjIngqjtO20L3YZ_ltJyn"
   },
   {
-    "title": "King's Quest VIII",
-    "text": "Mask of Eternity",
-    "id": "U_rVcKK39_F5ruszxXevT"
+    "title": "Social Friday Call",
+    "text": "Boardgame social relax, winddown",
+    "id": "7GP6F2Rj9uuEhVOqqWuZ6"
   },
   {
-    "title": "Vigilante 8",
-    "text": "Second offense",
-    "id": "wyzoZPLKOJbgXvDjpNO10"
+    "title": "Sprint Recap Thursday",
+    "text": "Need to cram extra coding in to reach deadline",
+    "id": "sw0eRGpsM8x4K1in4TCkP"
   },
   {
-    "title": "Dominion",
-    "text": "The card game not the war",
-    "id": "qEsNmcuEWjyL5zDQl3Jj8"
+    "title": "Research ",
+    "text": "Research at Library on Monday",
+    "id": "Ha_DVx7lCW3uNPCPHDJoo"
+  },
+  {
+    "title": "Task Force Implementation",
+    "text": "Need to delegate tasks on Wednesday",
+    "id": "kMD1RaytyLIXL1Xw8fKcx"
   }
 ]
